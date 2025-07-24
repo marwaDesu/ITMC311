@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints">
+
+        <!-- زر Main Thread -->
+        <Button
+            android:id="@+id/btnMainThread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تشغيل في Main Thread"
+            android:onClick="runOnMainThread" />
+
+        <!-- مسافة -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- زر Background Thread -->
+        <Button
+            android:id="@+id/btnBackgroundThread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تشغيل في Background Thread"
+            android:onClick="runOnBackgroundThread" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

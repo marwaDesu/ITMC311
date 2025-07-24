@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- LinearLayout داخلي لتنسيق العناصر عموديًا -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="MissingConstraints">
+
+        <!-- النص الأول -->
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- النص الثاني -->
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- شريط التقدم الأفقي -->
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- شريط التقدم الدائري -->
+        <ProgressBar
+            android:id="@+id/progress2"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- زر تشغيل المهمة -->
+        <Button
+            android:id="@+id/btnStartThread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ابدأ المهمة" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
